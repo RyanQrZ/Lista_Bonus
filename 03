@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void sorte(){
+    int n, i, sum=0, num[100];
+
+    cin >> n;
+
+    for(i=0; i<=n-1; i++){
+        cin >> num[i];
+    }
+
+    if(n%2 == 0){
+        sum = ( num[(n-1)/2] + num[((n-1)/2) + 1] ) / 2;
+        cout << sum << endl;
+    }
+    else{
+        cout << num[(n-1)/2];
+    }
+}
+
+int main(){
+
+    sorte();
+
+    return 0;
+}
