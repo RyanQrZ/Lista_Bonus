@@ -18,6 +18,8 @@ void sorte(){
             }
         }
     }
+
+    cout << num[n-1] << endl;
 }
 
 int main(){
