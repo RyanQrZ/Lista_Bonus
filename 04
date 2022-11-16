@@ -1,25 +1,30 @@
 #include <iostream>
 using namespace std;
 
-void sorte(){
-    int n, i, sum=0, num[100];
+void core(){
+    int i, n, sum=0;
 
     cin >> n;
 
-    for(i=0; i<n; i++){
-        cin >> num[i];
+    int num[n];
 
+    for(i=0; i<=n-1; i++){
+        cin >> num[i];
+    }
+
+    for(i=0; i<=n-1; i++){
         sum = sum + num[i];
     }
 
-    sum = sum/n;
+    sum = sum / n;
 
-    cout << '\n' << "---" << sum << "----" << endl;
+    cout << endl << "---" << sum << "---" << endl;
+
 }
 
 int main(){
 
-    sorte();
+    core();
 
     return 0;
 }
