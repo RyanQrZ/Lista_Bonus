@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void core(){
+    int i, j;
+    float p1, p2, p3, p4, notaAluno[10];
+
+    for(i=0; i<10; i++){
+        cin >> p1 >> p2 >> p3 >> p4;
+
+        notaAluno[i] = (p1+p2+p3+p4) / 4;
+
+        if(notaAluno[i] >= 7.0){
+            j++;
+        }
+    }
+
+    cout << endl << "---" << j << "---" << endl;
+}
+
+int main(){
+
+    core();
+
+    return 0;
+}
